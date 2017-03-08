@@ -1,4 +1,4 @@
-# pangadmin
+# jspangAdmin
 
 > A Vue.js project
 
