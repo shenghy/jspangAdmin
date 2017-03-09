@@ -93,6 +93,7 @@
             
          </el-col>
 
+
          <el-col :xs="8" :sm="8" :md="2" >
             <div class="user-header">
                 <el-dropdown trigger="click" menu-align="start">
@@ -229,6 +230,7 @@
     }
     .user-header img{
         border-radius:50%;
+        cursor:pointer;
     }
     .pop-image{
         display:block;
@@ -295,6 +297,7 @@
         padding-top:3px;
         padding-right:3px;
     }
+    
 
 
 </style>

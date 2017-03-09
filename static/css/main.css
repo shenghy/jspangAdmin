@@ -10,3 +10,19 @@ body{
     color:#777777;
 }
 a{text-decoration: none}
+
+.el-badge__content{
+    border:0px !important;
+}
+.content{
+    background: none repeat scroll 0 0 #d9d9d9;
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 66px;
+    bottom:0;
+    width: auto;
+    padding:40px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
