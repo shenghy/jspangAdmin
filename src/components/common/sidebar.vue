@@ -26,9 +26,9 @@
                     <span class="sb-cn">charts</span>
                  
                 </template>
-                <el-menu-item index="basetable">
-                        Components
-                </el-menu-item>
+                <el-menu-item index="AmCharts"> amCharts</el-menu-item>
+                      
+                
             </el-submenu>
 
 
