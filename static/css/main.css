@@ -15,14 +15,19 @@ a{text-decoration: none}
     border:0px !important;
 }
 .content{
-    background: none repeat scroll 0 0 #d9d9d9;
+    background: none repeat scroll 0 0 #f0f3f4;
     position: absolute;
     left: 200px;
     right: 0;
     top: 66px;
     bottom:0;
     width: auto;
-    padding:40px;
+    padding:25px 40px 25px 40px;
     box-sizing: border-box;
     overflow-y: scroll;
+}
+.clear{
+    width:100%;
+    height:0px;
+    clear:both;
 }
