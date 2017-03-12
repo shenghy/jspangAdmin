@@ -93,6 +93,22 @@
         </el-row>
 
 
+
+        <el-row :gutter="20">
+            <el-col :xs="24" :sm="24" :md="12" :lg="12">
+                <el-card class="box-chart">
+                    <pieChart></pieChart>
+                </el-card>
+            </el-col>
+            <el-col :xs="24" :sm="24" :md="12" :lg="12">
+                <el-card class="box-chart">
+                    <lineChart></lineChart>
+                </el-card>
+            </el-col>
+            
+        </el-row>
+
+
     </div>
 
 
@@ -101,6 +117,11 @@
 
 <script>
     import vPageTitle from '../common/pageTitle.vue';
+    import barChart from '../charts/barChart.vue';
+    import pieChart from '../charts/pieChart.vue';
+    import lineChart from '../charts/lineChart.vue';
+    import radarChart from '../charts/radarChart.vue';
+    import funnelChart from '../charts/funnelChart.vue';
     export default {
         data(){
            return{
@@ -108,7 +129,7 @@
            }
         },
         components:{
-            vPageTitle
+            vPageTitle,barChart,pieChart,lineChart,radarChart,funnelChart
         }
     }
 </script>
@@ -129,5 +150,8 @@
         padding-top:10px;
         font-size:1.1rem;
         
+    }
+    .box-chart{
+        height:420px;
     }
 </style>

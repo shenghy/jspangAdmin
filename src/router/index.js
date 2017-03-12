@@ -2,7 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/common/Home';
 import DashBoard from '@/components/page/DashBoard';
-import AmCharts from '@/components/page/AmCharts';
+import AmCharts from '@/components/page/BasicCharts';
+import FormInput from '@/components/page/FormInput';
 
 Vue.use(Router)
 
@@ -21,9 +22,13 @@ export default new Router({
           path:'/DashBoard',
           component:DashBoard
         },{
-          path:'/AmCharts',
+          path:'/BasicCharts',
           component:AmCharts
+        },{
+          path:'/FormInput',
+          component:FormInput
         }
+        
 
       ]
     }

@@ -21,14 +21,18 @@
 
             <el-submenu index="3">
                 <template slot="title">
-               
-                    <span class="sb-icon"><i class="material-icons">perm_data_setting</i></span>
+                    <span class="sb-icon"><i class="material-icons">pie_chart</i></span>
                     <span class="sb-cn">charts</span>
-                 
                 </template>
-                <el-menu-item index="AmCharts"> amCharts</el-menu-item>
-                      
-                
+                <el-menu-item index="BasicCharts"> BasicCharts</el-menu-item>
+            </el-submenu>
+
+            <el-submenu index="4">
+                <template slot="title">
+                    <span class="sb-icon"<i class="material-icons">border_all</i></span>
+                    <span class="sb-cn">Form Elements</span>
+                </template>
+                <el-menu-item index="FormInput"> Form Inputs</el-menu-item>
             </el-submenu>
 
 
