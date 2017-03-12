@@ -29,64 +29,66 @@
 
            <el-col :xs="8" :sm="8" :md="{span:2,offset: 4}" >
                 <div class="header-right">
+                   <el-col :span="10">
 
-                    <!--这是消息的下拉列表 用了element里的 dropdown组件-->                
-                    <el-dropdown menu-align="start" >
-                        <span>
-                            <el-badge :value="5" class="item">
-                                <i class="el-icon-message"></i>
-                            </el-badge>
-                        </span>
-                         <el-dropdown-menu slot="dropdown" >
-                            <el-dropdown-item >
-                               <span class="pop-title">You have new messages! </span>
-                            </el-dropdown-item>
+                        <!--这是消息的下拉列表 用了element里的 dropdown组件-->                
+                        <el-dropdown menu-align="start" >
+                            <span>
+                                <el-badge :value="5" class="item">
+                                    <i class="el-icon-message"></i>
+                                </el-badge>
+                            </span>
+                            <el-dropdown-menu slot="dropdown" >
+                                <el-dropdown-item >
+                                <span class="pop-title">You have new messages! </span>
+                                </el-dropdown-item>
 
-                            <el-dropdown-item  v-for="dialog in dialogs" :key="dialog.time" divided>
-                                <div class="pop-div">
-                                    <span class="pop-image">
-                                        <img :src="dialog.header" width="50px" >
-                                    </span>
-                                    <span class="pop-content">
-                                       {{dialog.content}}
-                                    </span>
-                                    <span class="pop-time">
-                                        {{dialog.time}}分钟前
-                                    </span>
-                                </div>
-                            </el-dropdown-item>
-                        </el-dropdown-menu>
-                    </el-dropdown>
+                                <el-dropdown-item  v-for="dialog in dialogs" :key="dialog.time" divided>
+                                    <div class="pop-div">
+                                        <span class="pop-image">
+                                            <img :src="dialog.header" width="50px" >
+                                        </span>
+                                        <span class="pop-content">
+                                        {{dialog.content}}
+                                        </span>
+                                        <span class="pop-time">
+                                            {{dialog.time}}分钟前
+                                        </span>
+                                    </div>
+                                </el-dropdown-item>
+                            </el-dropdown-menu>
+                        </el-dropdown>
+                     </el-col>    
+                    <el-col :span="8">  
+                        <el-dropdown menu-align="start"  >
+                            <span >
+                                <el-badge :value="3" class="item">
+                                    <i class="el-icon-date"></i>
+                                </el-badge>
+                            </span>
+                            <el-dropdown-menu slot="dropdown" >
+                                <el-dropdown-item >
+                                <span class="pop-title">You have new tasks! </span>
+                                </el-dropdown-item>
+                                <el-dropdown-item v-for="task in tasks" :key="task.id" divided>
+                                    <div class="task-div">
+                                        <span class="task-span task-tag">
+                                        <el-tag type="danger" v-if="task.rank==1">紧急</el-tag>
+                                        <el-tag type="warning" v-if="task.rank==2">重要</el-tag>
+                                        <el-tag type="success" v-if="task.rank==3">正常</el-tag>
+                                        </span>
+                                        <span class="task-span task-content">
+                                        {{task.content}}<br/>
+                                        <span class="task-time">截止：{{task.overTime}}</span>
+                                        </span>
+                                        
+                                        <span class="task-span task-btn"><el-button type="primary" size="mini">完成</el-button></span>
+                                    </div>
+                                </el-dropdown-item>
 
-
-                    <el-dropdown menu-align="start"  >
-                        <span >
-                            <el-badge :value="3" class="item">
-                                <i class="el-icon-date"></i>
-                            </el-badge>
-                        </span>
-                        <el-dropdown-menu slot="dropdown" >
-                            <el-dropdown-item >
-                               <span class="pop-title">You have new tasks! </span>
-                            </el-dropdown-item>
-                            <el-dropdown-item v-for="task in tasks" :key="task.id" divided>
-                                <div class="task-div">
-                                    <span class="task-span task-tag">
-                                    <el-tag type="danger" v-if="task.rank==1">紧急</el-tag>
-                                    <el-tag type="warning" v-if="task.rank==2">重要</el-tag>
-                                    <el-tag type="success" v-if="task.rank==3">正常</el-tag>
-                                    </span>
-                                    <span class="task-span task-content">
-                                    {{task.content}}<br/>
-                                    <span class="task-time">截止：{{task.overTime}}</span>
-                                    </span>
-                                    
-                                    <span class="task-span task-btn"><el-button type="primary" size="mini">完成</el-button></span>
-                                </div>
-                            </el-dropdown-item>
-
-                        </el-dropdown-menu>
-                    </el-dropdown>
+                            </el-dropdown-menu>
+                        </el-dropdown>
+                     </el-col>   
 
 
                 </div>
