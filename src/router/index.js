@@ -4,6 +4,8 @@ import Home from '@/components/common/Home';
 import DashBoard from '@/components/page/DashBoard';
 import AmCharts from '@/components/page/BasicCharts';
 import FormInput from '@/components/page/FormInput';
+import FormLayouts from '@/components/page/FormLayouts';
+import BasicTables from '@/components/page/BasicTables';
 
 Vue.use(Router)
 
@@ -27,6 +29,12 @@ export default new Router({
         },{
           path:'/FormInput',
           component:FormInput
+        },{
+          path:'/FormLayouts',
+          component:FormLayouts
+        },{
+          path:'/BasicTables',
+          component:BasicTables
         }
         
 

@@ -29,10 +29,20 @@
 
             <el-submenu index="4">
                 <template slot="title">
-                    <span class="sb-icon"<i class="material-icons">border_all</i></span>
+                    <span class="sb-icon"><i class="material-icons">content_paste</i></span>
                     <span class="sb-cn">Form Elements</span>
                 </template>
                 <el-menu-item index="FormInput"> Form Inputs</el-menu-item>
+                <el-menu-item index="FormLayouts">  Form Layouts</el-menu-item>
+            </el-submenu>
+
+             <el-submenu index="5">
+                <template slot="title">
+                    <span class="sb-icon"><i class="material-icons">border_all</i></span>
+                    <span class="sb-cn">Tables</span>
+                </template>
+                <el-menu-item index="BasicTables"> Basic Tables</el-menu-item>
+                
             </el-submenu>
 
 
