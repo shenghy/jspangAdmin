@@ -1,7 +1,6 @@
 # jspangAdmin
 
-> A Vue.js project
-
+> 一个建立在Vue2.0框架基础上的后台管理系统，它包含了后台所用的前端样式和常用组件。
 ## Build Setup
 
 ``` bash
