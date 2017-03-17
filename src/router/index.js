@@ -6,6 +6,9 @@ import AmCharts from '@/components/page/BasicCharts';
 import FormInput from '@/components/page/FormInput';
 import FormLayouts from '@/components/page/FormLayouts';
 import BasicTables from '@/components/page/BasicTables';
+import EditorPage from '@/components/page/EditorPage';
+import MarkdownPage from '@/components/page/MarkdownPage';
+import TodoList from '@/components/page/TodoListPage';
 
 Vue.use(Router)
 
@@ -24,6 +27,12 @@ export default new Router({
           path:'/DashBoard',
           component:DashBoard
         },{
+          path:'/EditorPage',
+          component:EditorPage
+        },{
+          path:'/MarkdownPage',
+          component:MarkdownPage
+        },{
           path:'/BasicCharts',
           component:AmCharts
         },{
@@ -35,6 +44,9 @@ export default new Router({
         },{
           path:'/BasicTables',
           component:BasicTables
+        },{
+          path:'/TodoList',
+          component:TodoList
         }
         
 

@@ -14,7 +14,9 @@
                     <span class="sb-cn">Components</span>
                  
                 </template>
-                <el-menu-item index="basetable">Mail</el-menu-item>
+                <el-menu-item index="EditorPage">Editor</el-menu-item>
+                <el-menu-item index="MarkdownPage">Markdown</el-menu-item>
+                <el-menu-item index="TodoList">TodoList</el-menu-item>
                      
                 
             </el-submenu>

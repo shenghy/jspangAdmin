@@ -32,11 +32,11 @@
           tableRowClassName(row, index) {
             if (index == 0) {
               return 'condensed-row1';
-            } else if (index == 1) {
+            } else if (index == 1 || index == 4) {
               return 'condensed-row2';
-            }else if (index == 2) {
+            }else if (index == 2 || index == 5) {
               return 'condensed-row3';
-            }else if (index == 3) {
+            }else if (index == 3 || index == 6) {
               return 'condensed-row4';
             }
             
@@ -50,6 +50,24 @@
             userName: 'JSpang',
             age: '30',
             ability: 'Web,HTML5,PHP',
+            value:'80%'
+          }, {
+            id:2,
+            userName: 'King',
+            age: '28',
+            ability: 'Web,PHP',
+            value:'70%'
+          }, {
+            id:3,
+            userName: 'Panda',
+            age: '30',
+            ability: 'PHP,MySql',
+            value:'60%'
+          }, {
+            id:4,
+            userName: 'HaiPu',
+            age: '35',
+            ability: 'Web,HTML5,PHP,DB',
             value:'80%'
           }, {
             id:2,

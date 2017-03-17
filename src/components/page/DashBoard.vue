@@ -10,7 +10,7 @@
                 <el-card class="box-card">
                    <el-row :gutter="6">
                     <el-col :xs="24" :sm="8" :md="8" :lg="8">
-                        <div> <el-progress type="circle" :percentage="67" :width="80"></el-progress></div>
+                        <el-progress type="circle" :percentage="67" :width="80"></el-progress>
                     </el-col>
                     <el-col :xs="24" :sm="11" :md="12" :lg="12">
                         <div class="cart-string"> 
@@ -95,12 +95,12 @@
 
 
         <el-row :gutter="20">
-            <el-col :xs="24" :sm="24" :md="12" :lg="12">
+            <el-col :xs="24" :sm="24" :md="24" :lg="12">
                 <el-card class="box-chart">
                     <pieChart></pieChart>
                 </el-card>
             </el-col>
-            <el-col :xs="24" :sm="24" :md="12" :lg="12">
+            <el-col :xs="24" :sm="24" :md="24" :lg="12">
                 <el-card class="box-chart">
                     <lineChart></lineChart>
                 </el-card>
@@ -108,6 +108,33 @@
             
         </el-row>
 
+
+
+        <!--todoList  & mail & table-->
+        <el-row :gutter="20">
+            <el-col :xs="24" :sm="24" :md="24" :lg="8">
+                <el-card class="box-list">
+                    To Do List<hr>
+                    <TodoList></TodoList>
+                </el-card>
+            </el-col>
+            <el-col :xs="24" :sm="24" :md="24" :lg="10">
+                <el-card class="box-list">
+                     BORDERED TABLE
+                   <hr>
+                   <borderTable></borderTable>
+                </el-card>
+            </el-col>
+
+            <el-col :xs="24" :sm="24" :md="24" :lg="6">
+                <el-card class="box-list">
+                     Message List
+                   <hr>
+                   <MessageList></MessageList>
+                </el-card>
+            </el-col>
+            
+        </el-row>
 
     </div>
 
@@ -122,6 +149,9 @@
     import lineChart from '../charts/lineChart.vue';
     import radarChart from '../charts/radarChart.vue';
     import funnelChart from '../charts/funnelChart.vue';
+    import TodoList from '../todoList/TodoList.vue';
+    import borderTable from '../tables/borderTable.vue';
+    import MessageList from '../message/MessageList.vue';
     export default {
         data(){
            return{
@@ -129,7 +159,7 @@
            }
         },
         components:{
-            vPageTitle,barChart,pieChart,lineChart,radarChart,funnelChart
+            vPageTitle,barChart,pieChart,lineChart,radarChart,funnelChart,TodoList,borderTable,MessageList
         }
     }
 </script>
@@ -137,6 +167,7 @@
 <style scoped>
     .el-col{
         margin-bottom:16px;
+        text-align:center;
     }
     .material-icons{
         font-size:80px;
@@ -153,5 +184,17 @@
     }
     .box-chart{
         height:420px;
+    }
+    .box-list{
+        height:auto;
+        text-align:left;
+    }
+    .box-list hr{
+        height:1px;
+        border:none;
+        border-top:1px  dashed #ccc;
+        margin-bottom:5px;
+        margin-top:6px;
+
     }
 </style>

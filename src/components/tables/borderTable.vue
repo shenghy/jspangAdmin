@@ -16,7 +16,7 @@
             id:1,
             userName: 'JSpang',
             age: '30',
-            ability: 'Web,HTML5,PHP',
+            ability: 'HTML5,PHP',
             value:'80%'
           }, {
             id:2,
@@ -34,8 +34,26 @@
             id:4,
             userName: 'HaiPu',
             age: '35',
-            ability: 'Web,HTML5,PHP,DB',
+            ability: 'Web,DB',
             value:'80%'
+          }, {
+            id:3,
+            userName: 'Panda',
+            age: '30',
+            ability: 'PHP,MySql',
+            value:'60%'
+          }, {
+            id:4,
+            userName: 'HaiPu',
+            age: '35',
+            ability: 'Web,DB',
+            value:'80%'
+          }, {
+            id:3,
+            userName: 'Panda',
+            age: '30',
+            ability: 'PHP,MySql',
+            value:'60%'
           }]
         }
       }

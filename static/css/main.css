@@ -31,3 +31,12 @@ a{text-decoration: none}
     height:0px;
     clear:both;
 }
+.ql-editor{
+    background-color: #fff;
+      min-height: 20em;
+      padding-bottom: 1em;
+    max-height: 25em;
+}
+.ql-toolbar{
+    background-color: #fff;
+}
