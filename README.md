@@ -1,6 +1,8 @@
 # jspangAdmin
 
 > 一个建立在Vue2.0框架基础上的后台管理系统，它包含了后台所用的前端样式和常用组件。它可以快速的帮你搭建基于Vue的后台管理系统。
+## 相关技术
+Vue-cli + element + eCharts
 ## Demo（案例预览）
 [Demo](http://jspang.com/jspangAdmin)
 
