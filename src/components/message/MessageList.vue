@@ -3,7 +3,7 @@
         <ul class="messageList">
             <li v-for="message in messages">
                 <span><img :src="message.header" /></span>
-                <span>{{message.name}}</span>
+                <span class="message_name">{{message.name}}</span>
                 <span class="ms-content">{{message.content}}</span>
             </li>
         
@@ -78,6 +78,9 @@
         width:70%;
         font-size:12px;
         margin-top:6px;
+    }
+    .messageList .message_name{
+        color:#4cb1a7;
     }
  
     
