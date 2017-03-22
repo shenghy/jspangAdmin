@@ -10,14 +10,9 @@
         </ul>
 
     </div>
-
-
-
 </template>
 
 <script>
-    
-
     export default {
         components:{
            
@@ -30,10 +25,8 @@
                     {header:'../../static/images/b_header3.jpg',name:'Panda',content:'中午一起吃个饭吧，我请客。',time:'15'},
                     {header:'../../static/images/b_header.jpg',name:'LinDa',content:'需要处理一下POP展示的白边样式。',time:'18'},
                     {header:'../../static/images/b_header2.jpg',name:'JSPang',content:'下午3点开需求会议，准时参加。',time:'24'},
-                    {header:'../../static/images/b_header3.jpg',name:'JSPang',content:'晚上我开车送你回家，你请我吃晚饭。',time:'45'},
-                    
+                    {header:'../../static/images/b_header3.jpg',name:'JSPang',content:'晚上我开车送你回家，你请我吃晚饭。',time:'45'}
                 ]
-                
             }
         },
         methods: {      
