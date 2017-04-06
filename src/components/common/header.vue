@@ -25,7 +25,7 @@
                     <span>www.jspang.com</span>
                 </div>
             </el-col>
-
+ 
 
            <el-col :xs="8" :sm="8" :md="{span:2,offset: 4}" >
                 <div class="header-right">
